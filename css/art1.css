@@ -1,0 +1,62 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'artwork_2 artwork_2 artwork_2 desc_2 desc_2'
+        'footer footer footer footer footer';
+    max-width: 80%;
+    align-content: center;
+    gap: 5px;
+    background-color: #2196F3;
+    padding: 0 ;
+    margin: 0px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    color: black;
+    background-color: darkcyan;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.header > div {
+    background-color: darkcyan;
+    padding: 0 25px;
+    font-size: 30px;
+}
+
+.art2 {
+    grid-area: artwork_2;
+    height: 100%;
+    margin: 0;
+    background-color: yellow;
+    background-image: linear-gradient(117deg, #FFC725 0%, #FFFD3B 100%);
+    background-size: contain;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.desc2 { grid-area: desc_2; }
+
+.footer { grid-area: footer; }
+
+
+#myCanvas {
+    width: 500px;
+    border: 5px solid blueviolet;
+    background-color: #f35b1c;
+}

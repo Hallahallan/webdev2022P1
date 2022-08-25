@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    background: #eeeeee;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+#title {
+    font-family: 'Roboto Slab', serif;
+    color: #cacaca;
+    font-size: 10rem;
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-align: center;
+}
+
+#subtitle {
+    font-family: 'Roboto Slab', serif;
+    color: #cacaca;
+    font-size: 2rem;
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#title span {
+    font-weight: bold;
+    color: #999;
+}
+
+#bubble-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: .8rem;
+}
+
+footer {
+    background-color: #111111;
+    background-image: linear-gradient(183deg, #111111 0%, #555555 100%);
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: #666;
+    font-size: .9rem;
+    text-align: center;
+}
+
+/** circle span links **/
+
+.circle-text {
+    top: 40px;
+    position: relative;
+    text-align: center!important;
+    z-index: 1;
+}
+
+#circle-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+    margin-right: 20px;
+}
+
+#circle-1 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#circle-1:hover {
+    background-color: #5d2880;
+    margin-top: 20px;
+}
+
+#circle-1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
+
+#circle-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+    margin-right: 20px;
+}
+
+#circle-2 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#circle-2:hover {
+    background-color: #eeee5e;
+    margin-top: 20px;
+}
+
+#circle-2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
