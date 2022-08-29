@@ -21,7 +21,7 @@ a {
     font-family: 'Roboto Slab', serif;
     color: #cacaca;
     font-size: 10rem;
-    width: 570px;
+    width: 670px;
     margin: 0 auto;
     padding-top: 120px;
     text-align: center;
@@ -31,7 +31,7 @@ a {
     font-family: 'Roboto Slab', serif;
     color: #cacaca;
     font-size: 2rem;
-    width: 570px;
+    width: 670px;
     margin: 0 auto;
     padding-top: 0px;
     text-align: center;
@@ -42,11 +42,13 @@ a {
     color: #999;
 }
 
-#bubble-box {
+
+
+#circle-container {
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 710px;
     margin: 0 auto;
     padding-top: 50px;
     font-size: .8rem;
@@ -134,11 +136,149 @@ footer p{
 }
 
 #circle-2:hover {
-    background-color: #eeee5e;
+    background-color: #FCBD18;
     margin-top: 20px;
 }
 
 #circle-2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
+
+#circle-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+    margin-right: 20px;
+
+}
+
+#circle-3 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+#circle-3:hover {
+    background-color: #869262;
+    margin-top: 20px;
+}
+
+#circle-3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
+
+#circle-4 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+    margin-right: 20px;
+}
+
+#circle-4 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#circle-4:hover {
+    background-color: #bd0000;
+    margin-top: 20px;
+}
+
+#circle-4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
+
+#circle-5 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+    margin-right: 20px;
+}
+
+#circle-5 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#circle-5:hover {
+    background-color: #999;
+    margin-top: 20px;
+}
+
+#circle-5 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** circle end **/
+
+#circle-6 {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    border-radius: 50%;
+    transition: all .5s linear;
+    float: left;
+}
+
+#circle-6 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#circle-6:hover {
+    background-color: #e4880f;
+    margin-top: 20px;
+}
+
+#circle-6 a {
     color: #fff;
     text-decoration: none;
 }

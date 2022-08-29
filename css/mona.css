@@ -1,0 +1,126 @@
+.body {
+}
+
+#circle-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    transition: all .5s linear;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+#circle-1 a span {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    color: #000;
+}
+
+#circle-1:hover {
+    background-color: #cacaca;
+}
+
+#circle-1-text {
+    top: 40px;
+    position: relative;
+    text-align: center!important;
+    z-index: 1;
+}
+
+#circle-1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+#container{
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    width:50vw;
+    padding-top: 10vh;
+}
+
+#mona{
+    display: block;
+    margin: auto;
+    width: 50vw;
+    position: absolute;
+}
+
+.grid-container {
+    display: grid;
+    width:50vw;
+    grid-template-areas:
+        'item-1 item-1 item-2 item-2'
+        'item-1 item-1 item-2 item-2'
+        'item-3 item-3 item-4 item-4'
+        'item-3 item-3 item-4 item-4';
+    gap: 2px;
+    position:absolute;
+}
+
+.grid-container > div {
+    background-color: rgba(20,20,20,0.20);
+}
+
+#eye-container{
+    display:flex;
+    top: 18.5vh;
+    left: 22vw;
+    width: 5vw;
+    height: 5vh;
+    position: relative;
+}
+
+.eye{
+    width: 1.5vw;
+    height: 2vh;
+    background-color: #eee;
+    border-radius: 50%;
+    z-index: 900;
+}
+
+.pupil{
+    width: 0.7vw;
+    height: 0.7vh;
+    background-color: #111;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.item-1{
+    grid-area: item-1;
+    width:25vw;
+    height:25vh;
+}
+
+#svg-1{
+    x: 100;
+    y:100;
+}
+
+.item-2{
+    grid-area: item-2;
+    width:25vw;
+    height:25vh;
+}
+
+.item-3{
+    grid-area: item-3;
+    width:25vw;
+    height:25vh;
+}
+
+.item-4{
+    grid-area: item-4;
+    width:25vw;
+    height:25vh;
+}

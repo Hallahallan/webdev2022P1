@@ -9,13 +9,22 @@ body {
 
 }
 
-#Hoved {
+.grid-container {
+    display: grid;
+    width:100vw;
+    height:100vh;
+    grid-template-areas:
+        's1 s2 s3 s4 s5 s6'
+        's7 s8 s9 s10 s11 s12'
+        's13 s14 s15 s16 s17 s18'
+        's19 s20 s21 s22 s23 s24'
+        's25 s26 s27 s28 s29 s30';
 }
 
 #circle-1 {
     width: 100px;
     height: 100px;
-    background-color: #fff;
+    background-color: #eee;
     position: absolute;
     border-radius: 50%;
     transition: all .5s linear;
@@ -62,7 +71,7 @@ body {
     width:100%;
 }
 
-.s {
+.emoji {
     image-orientation: center;
     padding: 0 auto;
     height: 150px;
@@ -73,7 +82,7 @@ body {
     opacity: 0.001;
 }
 
-.s:hover {
+.emoji:hover {
     padding: 0 auto;
     transform: scale(7,7) !important;
     transition-duration: 0.5s;
@@ -81,6 +90,20 @@ body {
     align-content: center;
     opacity: 1;
     z-index: 1;
+}
+
+.tear-l {
+    fill: skyblue;
+    stroke: black;
+    stroke-width: 2PX;
+    transform: scale(0.5,0.5);
+}
+
+.tear-r {
+    fill: skyblue;
+    stroke: black;
+    stroke-width: 2PX;
+    transform: scale(0.5,0.5);
 }
 
 #s1 {
