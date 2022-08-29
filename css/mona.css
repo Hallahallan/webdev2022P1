@@ -1,6 +1,37 @@
 .body {
 }
 
+#bg1{
+    width:99vw;
+    height:97vh;
+    background-color: #869262;
+    position: absolute;
+}
+
+#bg2{
+    margin-top: 20vh;
+    width:99vw;
+    height:77vh;
+    background-color: #5B6857;
+    position: absolute;
+}
+
+#bg3{
+    margin-top: 47vh;
+    width:99vw;
+    height:50vh;
+    background-color: #875F2C;
+    position: absolute;
+}
+
+#bg4{
+    margin-top: 67vh;
+    width:99vw;
+    height:30vh;
+    background-color: #160F21;
+    position: absolute;
+}
+
 #circle-1 {
     width: 100px;
     height: 100px;
@@ -89,8 +120,18 @@
 }
 
 .pupil{
+    position: absolute;
     width: 0.7vw;
     height: 0.7vh;
+    background-color: #111;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+#pupil1{
+    position:absolute;
+    width: 20px;
+    height: 20px;
     background-color: #111;
     border-radius: 50%;
     z-index: 999;

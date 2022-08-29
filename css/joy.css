@@ -60,7 +60,7 @@ body {
     text-decoration: none;
 }
 
-.text {
+#text {
     margin: 0 auto;
     padding-top: 200px;
     top: 50px;
