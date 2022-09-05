@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow-y: hidden;
     overflow-x: hidden;
+    z-index: 9;
 }
 
 #bg1{
@@ -89,82 +90,36 @@ body {
     position: absolute;
 }
 
-.grid-container {
-    display: grid;
-    width:50vw;
-    grid-template-areas:
-        'item-1 item-1 item-2 item-2'
-        'item-1 item-1 item-2 item-2'
-        'item-3 item-3 item-4 item-4'
-        'item-3 item-3 item-4 item-4';
-    gap: 2px;
-    position:absolute;
-}
-
-.grid-container > div {
-    background-color: rgba(20,20,20,0.20);
-}
-
 #eye-container{
     display:flex;
-    top: 18.5vh;
+    top: 17.5vh;
     left: 22vw;
     width: 5vw;
     height: 5vh;
     position: relative;
 }
 
-.eye{
-    width: 1.5vw;
-    height: 2vh;
-    background-color: #eee;
+.eye {
+    position: relative;
+    display: inline-block;
     border-radius: 50%;
-    z-index: 900;
+    width: 30px;
+    height: 30px;
+    background: #EEE;
 }
 
-.pupil{
+.eye:after { /*pupil*/
     position: absolute;
-    width: 0.7vw;
-    height: 0.7vh;
-    background-color: #111;
+    bottom: 17px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #000;
     border-radius: 50%;
-    z-index: 999;
+    content: " ";
 }
 
-#pupil1{
+#myCanvas{
     position:absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #111;
-    border-radius: 50%;
-    z-index: 999;
-}
-
-.item-1{
-    grid-area: item-1;
-    width:25vw;
-    height:25vh;
-}
-
-#svg-1{
-    x: 100;
-    y:100;
-}
-
-.item-2{
-    grid-area: item-2;
-    width:25vw;
-    height:25vh;
-}
-
-.item-3{
-    grid-area: item-3;
-    width:25vw;
-    height:25vh;
-}
-
-.item-4{
-    grid-area: item-4;
-    width:25vw;
-    height:25vh;
+    margin: 0 auto;
 }
