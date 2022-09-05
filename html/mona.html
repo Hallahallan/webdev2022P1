@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Mona</title>
     <link rel="stylesheet" href="../css/mona.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="theme-color" content="#fafafa">
 
@@ -17,23 +18,113 @@
 <div id="bg3"></div>
 <div id="bg4"></div>
 
+<!-- Back circle -->
 <div id="circle-1"><a href="index.html"><span></span><div id="circle-1-text">back</div></a></div>
 
+<!-- Container for Mona lisa image and canvas paintings -->
 <div id="container">
     <img src="../images/mona.jpg" id="mona">
+
+    <!-- Container for Monas eyes -->
     <div id="eye-container">
         <div class="eye" id="eye1" >
         </div>
         <div class="eye" id="eye2">
         </div>
     </div>
+
+    <!-- Container for Canvas, all paintings in here are painted in inline JavaScript further below -->
+    <canvas id="myCanvas" width="800" height="500">
+        <canvas id="2d"></canvas>
+    </canvas>
 </div>
 
-<canvas id="myCanvas" width="300" height="300">
-
-</canvas>
-
+<!-- JS below -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../js/mona.js"></script>
+<script type="text/javascript">
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+
+    //Stroke Square
+    ctx.lineWidth = 30;
+    ctx.strokeStyle = "rgb(0, 0, 255)";
+    ctx.strokeRect(500, 100, 120, 170);
+
+    //Stroke Square
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = "rgb(100, 100, 255)";
+    ctx.strokeRect(500, 100, 120, 170);
+
+    //Filled Rectangle
+    ctx.fillStyle = "rgb(255, 150, 0)";
+    ctx.fillRect(350, 250, 20, 450);
+
+    //Filled Rectangle 2
+    ctx.fillStyle = "rgb(205, 100, 0)";
+    ctx.fillRect(370, 250, 10, 450);
+
+    //Not a Circle
+    ctx.strokeStyle = "rgb(255,200,140)"
+    ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255,105,180)"
+    ctx.beginPath();
+    ctx.arc(200, 120, 100, 90, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    //Triangle
+    ctx.strokeStyle = "rgb(100,100,140)"
+    ctx.lineWidth = 20;
+    ctx.beginPath();
+    ctx.moveTo(450, 250);
+    ctx.lineTo(450, 450);
+    ctx.lineTo(650, 450);
+    ctx.stroke();
+    ctx.fillStyle = "rgb(0,200,80)"
+    ctx.fill();
+
+    //A shape without name
+    ctx.strokeStyle = "rgba(200,200,240,0.8)"
+    ctx.lineWidth = 20;
+    ctx.beginPath();
+    ctx.moveTo(50, 250);
+    ctx.lineTo(50, 450);
+    ctx.lineTo(150, 450);
+    ctx.lineTo(180, 350);
+    ctx.lineTo(50, 300);
+    ctx.lineTo(270, 470);
+    ctx.lineTo(270, 190);
+    ctx.lineTo(50, 250);
+    ctx.stroke();
+    ctx.fillStyle = "rgba(214, 9, 63, 0.6)"
+    ctx.fill();
+
+    //Hide the paintings until hovered
+    $("#myCanvas").hide();
+
+    $(document).ready(function(){
+        //Shows lots of blocks when hovering mona lisa
+        $("#mona").mouseover(function(){
+            $("#myCanvas").show();
+        });
+        $("#mona").click(function(){
+            //Draw mouth on Mona lisa when clicked
+            ctx.beginPath();
+            ctx.arc(383, 135, 20, 0, Math.PI, false);
+            ctx.closePath();
+            ctx.lineWidth = 5;
+            ctx.fillStyle = 'red';
+            ctx.fill();
+            ctx.strokeStyle = '#550000';
+            ctx.stroke();
+        });
+        //Hide paintings after not hovering
+        $("#mona").mouseout(function(){
+            $("#myCanvas").hide();
+        });
+    });
+</script>
 
 </body>
 

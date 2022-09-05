@@ -12,27 +12,21 @@ a {
 }
 
 #container {
-    width: 80vw;
+    display:grid;
+    width: 90vw;
     margin: 0 auto;
-    align-content: center;
+    grid-template-areas:
+        'sub1 sub2 sub3 sub4 sub5'
+        'doc1 doc2 doc3 doc4 doc5';
 }
 
-#title {
-    font-family: 'Roboto Slab', serif;
-    color: #cacaca;
-    font-size: 10rem;
-    width: 80vw;
-    margin: 0 auto;
-    padding-top: 10vh;
-    text-align: center;
-}
-
-#subtitle {
+.subtitle {
     font-family: 'Roboto Slab', serif;
     color: #cacaca;
     font-size: 2rem;
-    width: 80vw;
-    margin: 0 auto;
+    width: 15vw;
+    margin: 1vw;
+    margin-top:5vw;
     padding-top: 0px;
     text-align: center;
 }
@@ -42,23 +36,18 @@ a {
     color: #999;
 }
 
-#subtitle span {
+.subtitle span {
     font-weight: bold;
     color: #999;
-}
-
-#mouth{
-    background-color: red;
 }
 
 p {
     font-family: 'Roboto Slab', serif;
     color: #999;
-    font-size: 1rem;
-    width: 50vw;
+    font-size: 0.9rem;
+    width: 15vw;
     margin: 2vh auto;
     padding-top: 0px;
-    text-align: center;
 }
 
 #circle-1 {
